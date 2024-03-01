@@ -1,0 +1,21 @@
+:root {
+    --waikawa-gray-50: #f2f7fb;
+    --waikawa-gray-100: #e7f0f8;
+    --waikawa-gray-200: #d3e2f2;
+    --waikawa-gray-300: #b9cfe8;
+    --waikawa-gray-400: #9cb6dd;
+    --waikawa-gray-500: #839dd1;
+    --waikawa-gray-600: #6a7fc1;
+    --waikawa-gray-700: #6374ae;
+    --waikawa-gray-800: #4a5989;
+    --waikawa-gray-900: #414e6e;
+    --waikawa-gray-950: #262c40;
+}
+
+#guia {
+   padding: 10px; 
+   margin: 15px; 
+   border: 2px var(--waikawa-gray-600) solid;
+   background-color: var(--waikawa-gray-100);
+   border-radius: 15px;
+}

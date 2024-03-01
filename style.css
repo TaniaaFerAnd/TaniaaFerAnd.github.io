@@ -1,0 +1,244 @@
+:root {
+    --waikawa-gray-50: #f2f7fb;
+    --waikawa-gray-100: #e7f0f8;
+    --waikawa-gray-200: #d3e2f2;
+    --waikawa-gray-300: #b9cfe8;
+    --waikawa-gray-400: #9cb6dd;
+    --waikawa-gray-500: #839dd1;
+    --waikawa-gray-600: #6a7fc1;
+    --waikawa-gray-700: #6374ae;
+    --waikawa-gray-800: #4a5989;
+    --waikawa-gray-900: #414e6e;
+    --waikawa-gray-950: #262c40;
+}
+
+body {
+    background-color: var(--waikawa-gray-100);
+    background: linear-gradient(320deg, var(--waikawa-gray-100) 0%, var(--waikawa-gray-500) 100%);
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+
+    min-height: 100vh;
+}
+
+/*--== GENERAL ==--*/
+button {
+    background-color: var(--waikawa-gray-500);
+    color: var(--waikawa-gray-50);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 550;
+}
+
+button:hover {
+    background-color: var(--waikawa-gray-600);
+}
+
+button:active {
+    background-color: var(--waikawa-gray-700);
+}
+
+button:disabled {
+    background-color: var(--waikawa-gray-200);
+    color: var(--waikawa-gray-700);
+}
+
+h2 {
+    transition: all 0.75s ease-out;
+}
+/*--== END GENERAL ==--*/
+/*--== NAVBAR ==--*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 10px;
+
+    background-color: var(--waikawa-gray-800);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--waikawa-gray-50);
+    background-color: var(--waikawa-gray-500);
+    border-radius: 10px;
+
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: var(--waikawa-gray-600);
+}
+/*--== END NAVBAR ==--*/
+main {
+    margin: 0 10%;
+}
+
+header {
+    background-color: var(--waikawa-gray-950);
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: center;
+    color: var(--waikawa-gray-50);
+    box-shadow: 0px 5px 10px 4px rgba(0,0,0,0.75);
+    
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: all 1s ease-out;
+}
+
+header h1 {
+    color: var(--waikawa-gray-700);
+}
+
+#info-personal article {
+    background-color: var(--waikawa-gray-100);
+    margin: 15px 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+#personal article {
+    background-color: var(--waikawa-gray-200);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.75);
+
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    overflow: hidden;
+
+    text-align: center;
+    order: 2;
+
+    transition: all 0.75s ease-out;
+}
+
+#personal article.sel {
+    height: 50vh;
+    margin: 30px 0;
+    overflow:visible;
+}
+
+/*--== INFORMATION STYLE ==--*/
+#personal article .info {
+    width: 30%;
+    transition: all 0.75s ease-out;
+}
+
+    #personal article.sel .info {
+        width: 70%;
+    }
+
+    #personal article .info h2 {
+        width:min-content;
+        position: relative;
+        margin: 5px auto;
+        top: 0px;
+        left: 0px;
+    }
+
+        #personal article.sel .info h2 {
+            background-color: var(--waikawa-gray-800);
+            border-radius: 50px;
+            padding: 5px;
+            width:min-content;
+
+            position: relative;
+            top: -7%;
+            left: 40%;
+        }
+
+    #personal article .info p {
+        color: var(--waikawa-gray-200);
+        height: 0;
+        overflow: hidden;
+        transition: all 0.75s ease-out;
+    }
+
+        #personal article.sel .info p {
+            color: var(--waikawa-gray-950);
+            height: 65%;
+
+            padding: 0 15px ;
+        }
+
+
+/*--== IMAGE STYLE ==--*/
+#personal article .image {
+    background-color: var(--waikawa-gray-950);
+    width: 70%;
+
+    transition: all 0.75s ease-out;
+}
+
+    #personal article.sel .image {
+        width: 30%;
+    }
+
+#personal article .image p {
+    color: var(--waikawa-gray-100);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.75s ease-out;
+}
+
+    #personal article.sel .image p {
+        color: transparent;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+#personal article div {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    #personal article.sel div {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+/*--== Footer STYLE ==--*/
+footer {
+    margin-top: 60px;
+    background-color: var(--waikawa-gray-950);
+    color: var(--waikawa-gray-100);
+    text-align: center;
+
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+footer input {
+    font-size: 1vw;
+    border-radius: 10px;
+    padding: 5px;
+}

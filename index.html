@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <title>REFUGIO DEL NIÑO</title>
+
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <!--Barra de Navegacion-->
+        <nav>
+            <h2>REFUGIO DEL NIÑO</h2>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="./pages/GuiaResum.html">Guia Resum</a></li>
+                <li><a href="./pages/Infografia.html">Infografia</a></li>
+                <li><a href="./pages/Servicios.html">Serveis</a></li>
+            </ul>
+        </nav>
+        <!--Contenido Pagina-->
+        <main>
+            <header id="infoEmpresa" style="background-image: url('./content/img/foto0.png');">
+                <h1 style="font-size: 9vw; backdrop-filter: blur(5px)">REFUGIO DEL NIÑO</h1>
+                <h4 style="backdrop-filter: blur(5px);">Coneix a l'equip darrere de "Refugio del Ñiño": la nostra presidenta, secretària, vicepresidenta i tresorera lideren amb dedicació. Treballem en estreta col·laboració amb psicòlegs, especialistes i serveis d'emergència per a garantir un servei integral i de qualitat.</h4>  
+            </header>
+            <section id="info-personal">
+                <article style="text-align: center;">
+                    <p>
+                        Som una associació compromesa amb el benestar i la protecció de nens i nenes. Col·laborem estretament amb professionals en psicologia i ens coordinem amb serveis externs, com el Servei d'Orientació i Informació a la Ciutadania (SOIC), per abordar consultes sobre maltractament i explotació sexual infantil. Oferim una varietat de recursos, com ara contes i guies, amb l'objectiu de promoure ambients segurs i saludables per a tots els nens i nenes.
+                    </p>
+                </article>
+                <article>
+                    <h3>Objetius</h3> 
+                    <p>
+                        <ul>
+                            <li>Visibilitzar la realitat sobre la violència contra la infància.</li>
+                            <li>Augmentar la consciència social sobre el problema.</li>
+                            <li>Corresponsabilitzar a la societat en general en matèria de protecció de nens i nenes.</li>
+                            <li>Facilitar l’accès de nens i nenes de la ciutadanía als mecanismes de notificació i denuncies existents.</li>
+                            <li>Promoure la notificació</li>
+                            <li>Entre els nostres valors entren... respecte, responsabilitat social, transparència, solidaritat, treball en equip, eficàcia, ètica i igualtat.</li>
+                        </ul>
+                    </p> 
+                </article>
+                <article>
+                    <h3>Qui som</h3>
+                    <p>Som tres estudiants d’educació infantil, les quals hem vist interessant crear una pàgina web sobre el maltractament infantil.Amb aquesta campanya no sols conscienciem sobre la necessitat de comunicar les situacions de violència, sinó que també acostem els recursos de notificació a la ciutadania: a nens, nenes adolescents, famílies i societat en general.</p>
+                </article>
+                <!--dirigido a Educadores-->
+                <!--boton hacia la guia resum, infografia, etc-->
+                <!--dirigido a tener recursos para peques-->
+                <!--Boton hacia los recursos para los peques (cuentos, juegos, actividades, etc)-->
+                <!--Boton hacia los recursos para los peques (psicologos, especialistas, servicios de emergencia. etc)-->
+            </section>
+            <section id="personal">
+                <!--psicologos-->
+                <article id="psicologos" class="">
+                    <div class="info">
+                        <h2>Psicolègs</h2>
+                        <p>A la nostra organització, col·laborem estretament amb professionals en l'àmbit psicològic per oferir suport i orientació a educadors, adults i infants que ho necessitin. Ens dediquem a millorar el benestar emocional i el desenvolupament integral de cada individu, proporcionant eines i recursos que promoguin un entorn educatiu i emocionalment saludable per a tothom. El nostre compromís és treballar de la mà amb experts per oferir el suport necessari i contribuir al creixement i la felicitat de cada persona involucrada en el procés educatiu.</p>
+                        <button onclick="ChangeState(0)">More</button>
+                    </div>
+                    <div class="image" style="background-image: url('./content/img/foto1.png');"></div>   
+                </article>
+                <!--especialistas-->
+                <article id="especialistas" style="transform: scaleX(-1);">
+                    <div class="info" style="transform: scaleX(-1);">
+                        <h2>Especialistes</h2>
+                        <p>En el nostre enfocament, sempre comptem amb especialistes altament qualificats en diversos àmbits per garantir que cada desafiament s'abordi amb l'atenció i la cura adequades. Reconeixem la importància de comptar amb una xarxa de suport sòlida, per la qual cosa, si és necessari, ens coordinem amb serveis externs especialitzats per complementar el nostre treball. Aquesta col·laboració ens permet oferir un enfocament integral i personalitzat, assegurant que cada individu rebi l'ajuda i l'acompanyament que necessiteu per prosperar i superar qualsevol obstacle que pugui enfrontar.</p>
+                        <button onclick="ChangeState(1)">More</button>
+                    </div>
+                    <div class="image" style="transform: scaleX(-1); background-image: url('./content/img/foto2.png');"></div>   
+                </article>
+                <!--a-->
+                <article id="servicios">
+                    <div class="info">
+                        <h2>Serveis</h2>
+                        <p>La nostra associació es compromet a proporcionar un entorn segur i de suport per abordar qüestions relacionades amb el maltractament i l'explotació sexual de nens i nenes. A través del Servei d'Orientació i Informació a la Ciutadania (SOIC), oferim a la comunitat la possibilitat de comunicar-se amb nosaltres per plantejar consultes i rebre orientació sobre aquests temes sensibles.
+
+                            A més, disposem d'una varietat de serveis i recursos dissenyats per oferir suport integral. Entre ells s'inclouen recursos visuals i manuals, com ara contes i llibres educatius, així com activitats interactives destinades als nens. També oferim guies per a educadors, proporcionant eines i estratègies per abordar aquestes problemàtiques de manera efectiva a l'entorn educatiu.
+                            
+                            El nostre objectiu és proporcionar una àmplia gamma de recursos i serveis que promoguin la consciència, la prevenció i la intervenció primerenca en situacions de maltractament i explotació sexual infantil, treballant en col·laboració amb la comunitat per garantir un ambient segur i protector per a tots els nens i nenes .</p>
+                        <button onclick="ChangeState(2)">More</button>
+                    </div>
+                    <div class="image" style="background-image: url('./content/img/foto69.png');"></div>   
+                </article>
+                <!--etc-->
+                <!--todas las funciones de cada uno-->
+            </section>
+        </main>
+        <footer>
+            <h2>T'agradaría rebre més informació o vols ser voluntari/a?</h2>
+            <input type="email" placeholder="EMAIL">
+            <button>Enviar</button>
+        </footer>
+
+        <script>
+            var psicologos = document.getElementById("psicologos");
+            var especialistas = document.getElementById("especialistas");
+            var servicios = document.getElementById("servicios");
+
+            function ChangeState(id) {
+                switch(id) {
+                    case 0:
+                        psicologos.classList.toggle("sel");
+                        break;
+                    case 1:
+                        especialistas.classList.toggle("sel");
+                        break;
+                    case 2: 
+                        servicios.classList.toggle("sel");
+                        break;
+                }
+            }
+        </script>
+    </body>
+</html>

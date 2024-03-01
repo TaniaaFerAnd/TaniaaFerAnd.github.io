@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <title>Servicios</title>
+
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+        <link rel="stylesheet" type="text/css" href="servicios.css" />
+    </head>
+    <body>
+        <!--Barra de Navegacion-->
+        <nav>
+            <h2>REFUGIO DEL NIÑO</h2>
+            <ul>
+                <li><a href="../index.html">Inici</a></li>
+                <li><a href="GuiaResum.html">Guia Resum</a></li>
+                <li><a href="Infografia.html">Infografia</a></li>
+                <li><a href="Servicios.html">Serveis</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!--Carrousel Imagenes-->
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img src="../content/img/foto1.png" alt="song">
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="../content/img/foto2.png" alt="song">
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="../content/img/foto69.png" alt="song">
+                    </label>
+                </div>
+            </div>
+            <!--Para Educadores-->
+            <h2>Para Educadores</h2>
+            <div class="info-cont">
+                <div class="item-cont">
+                    <input onclick="CheckSectionEdu(0)" type="radio" id="eduItem1" name="educadores">
+                    <label id="edu1" for="eduItem1">Guia del maltractament infantil</label>
+                    <input onclick="CheckSectionEdu(1)" type="radio" id="eduItem2" name="educadores">
+                    <label id="edu2" for="eduItem2">Taller de sensibilització sobre la explotació Sexual Infantil</label>
+                    <input onclick="CheckSectionEdu(2)" type="radio" id="eduItem3" name="educadores">
+                    <label id="edu3" for="eduItem3">Sesions de formació en primers auxilis psicològics</label>
+                </div>
+                <div class="text-cont">
+                    <section id="eduSec1"><a href="https://books.google.es/books?hl=es&lr=&id=f8YeUqfwhuQC&oi=fnd&pg=PA11&dq=guia+de+prevenció+del+maltractament+infantil&ots=jaOg3mrvo_&sig=s_MAWjRYwTZ8uoTj46AF_3-1Hqw#v=onepage&q&f=false">Guia de prevenció de maltractament infantil</a></section>
+                    <section id="eduSec2">Aquest taller brinda als educadors una comprensió profunda de l'explotació sexual infantil i com poden protegir els infants a curar-los. A través d'activitats pràctiques i discussions en grup, els participants aprenen a identificar signes d'explotació, establir límits saludables i comunicar-se de manera efectiva amb els nens sobre aquest tema delicat. El taller també proporciona recursos addicionals, com ara línies directes d'ajuda i materials de prevenció.
+                    </section>
+                    <section id="eduSec3">Aquestes sessions de formació estan dissenyades per capacitar els educadors en la prestació de primers auxilis psicològics a nens que han experimentat esdeveniments traumàtics o situacions de crisi. A través d'exercicis pràctics i simulacions de casos, els educadors aprenen com brindar suport emocional immediat, escoltar activament, validar les emocions i derivar els nens a recursos addicionals segons calgui. Les sessions també aborden estratègies per a l'autocura de l'educador en situacions d'alta exigència emocional.
+                    </section>
+                </div>
+            </div>
+            <!--Para Niños-->
+            <h2>Para Niños</h2>
+            <div class="info-cont">
+                <div class="item-cont">
+                    <input onclick="CheckSectionNin(0)" type="radio" id="ninItem1" name="ninos">
+                    <label id="ni1" for="ninItem1" >Llibre interactiu sobre l'autocura</label>
+                    <input onclick="CheckSectionNin(1)" type="radio" id="ninItem2" name="ninos">
+                    <label id="ni2" for="ninItem2" >Taller d'art teràpia</label>
+                    <input onclick="CheckSectionNin(2)" type="radio" id="ninItem3" name="ninos">
+                    <label id="ni3" for="ninItem3" >Club de lectura emocional</label>
+                </div>
+                <div class="text-cont">
+                    <section id="ninSec1" style="display: flex;">
+                        <div style="width: 40%;"><img src="https://m.media-amazon.com/images/I/81jqyNn5jBL._SY522_.jpg"></div>
+                        <div style="width: 60%;">
+                            <p>
+                                Aquest llibre interactiu està dissenyat per ensenyar als nens sobre la importància de l'autocura i com es poden protegir en diferents situacions. A través d'històries il·lustrades, jocs i activitats pràctiques, els nens aprenen sobre el respecte al seu cos, la importància de dir “no” quan se senten incòmodes i com cercar ajuda si es troben en perill. El llibre també inclou consells per a pares i educadors sobre com abordar aquests temes de manera sensible i efectiva.
+                            </p>
+                        </div> 
+                        </section>
+                    <section id="ninSec2">Aquest taller d'art teràpia proporciona als infants una manera creativa i expressiva d'explorar i processar les emocions. A través d'activitats artístiques com la pintura, el dibuix i el modelatge d'argila, els nens poden expressar lliurement els seus sentiments i experiències d'una manera segura i no verbal. El taller està dirigit per un terapeuta especialitzat en art i s'adapta a les necessitats i preferències de cada grup d'edat, fomentant l'autoexpressió, l'autoexploració i l'autocura emocional.
+                    </section>
+                    <section id="ninSec3">El club de lectura emocional és una activitat divertida i educativa que convida els nens a explorar les seves emocions a través de la lectura de contes i la discussió en grup. Cada setmana, els nens es reuneixen per llegir un llibre seleccionat que aborda temes emocionals com l'amistat, la valentia, la tristesa o l'empatia. Després de la lectura, es duu a terme una sessió de discussió on els nens comparteixen els seus pensaments, emocions i experiències relacionades amb la història. A més, es fan activitats pràctiques, com ara jocs de rols o dibuix, per aprofundir en la comprensió emocional i fomentar l'empatia entre els participants. Aquest club promou habilitats socials, intel·ligència emocional i un amor durador per la lectura.</section>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script>
+        const sectionsEdu = document.querySelectorAll('section[id^="eduSec"]');
+        const sectionsNin = document.querySelectorAll('section[id^="ninSec"]');
+
+        function CheckSectionEdu(id) {
+            sectionsEdu.forEach((element, i) => {
+                if (i == id) {
+                    element.classList.add('check');
+                } else {
+                    element.classList.remove('check');
+                }
+            });
+        }
+
+        function CheckSectionNin(id) {
+            sectionsNin.forEach((element, i) => {
+                if (i == id) {
+                    element.classList.add('check');
+                } else {
+                    element.classList.remove('check');
+                }
+            });
+        }
+    </script>
+            <footer>
+                <h2>T'agradaría rebre més informació o vols ser voluntari/a?</h2>
+                <input type="email" placeholder="EMAIL">
+                <button>Enviar</button>
+            </footer>
+</html>        
